@@ -8,8 +8,8 @@ const addPerson = async () => {
       age: 24,
       favoriteFoods: ["pizza", "salad", "meat", "soup"],
     });
+    await newPerson.save();
     console.log(newPerson);
-    newPerson.save();
   } catch (error) {
     console.log(error);
   }
